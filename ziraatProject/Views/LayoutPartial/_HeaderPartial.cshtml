@@ -1,0 +1,206 @@
+﻿
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Alo Ziraat</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/ziraatProject.styles.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <style>
+        .carousel-control-prev,
+        .carousel-control-next {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .footer {
+            /*position: fixed;*/
+            bottom: 0;
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            overflow-y: auto; 
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+
+
+        .card {
+            width: 50%; 
+
+            border: none; 
+        }
+        .card-header{
+            color: #ffc90d;
+            font-size: 24px;
+            font-style: italic;
+            font-weight: bold;
+            background-color:#3a3a3a;
+
+        }
+        
+
+        a {
+            color: #3a3a3a; 
+            text-decoration: underline; 
+        }
+
+            a:hover {
+                color: #ffc90d; 
+            }
+
+
+
+    /*sosyal medya*/
+        .fab {
+            padding: 5px;
+            font-size: 30px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+            margin: 4px 2px;
+        }
+
+            .fab:hover {
+                opacity: 0.6;
+            }
+
+        .fa-facebook-f {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+      /*İletişim sayfasındaki buton*/
+
+
+        .custom-button1 {
+            background-color: #ffc90d; 
+            color: #3a3a3a; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+            display: inline-block; 
+            font-size: 16px; 
+            text-align: center; 
+            text-decoration: none; 
+        }
+
+        .button1-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .required {
+            color: red;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+        }
+
+        /*iletişim sayfası stil özellikleri*/
+
+        .container1 {
+            max-width: 800px;
+            margin: 30px auto;
+            border: 2px dashed #3a3a3a;
+            padding: 70px;
+            box-sizing: border-box;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+           
+           
+        }
+
+            .form-control:focus {
+                outline: none;
+                border: 1px solid #ffc90d; 
+                box-shadow: 0 0 5px #ffc90d; 
+            }
+
+        .form-header, .form-footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .form-section {
+            margin-top: 20px;
+        }
+
+        .section-title {
+            text-decoration: underline;
+        }
+
+        
+
+        .form-check {
+            margin-top: 10px;
+        }
+
+
+        .div-baslik {
+            /*text-decoration: underline;*/
+            color: #3a3a3a; 
+            border-bottom: 2px solid #ffc90d; 
+            padding-bottom: 10px; 
+            font-size: 18px;
+            font-family: 'Arial', sans-serif;
+            width: 800px;
+        }
+
+
+    </style>
+
+   
+</head>

@@ -1,0 +1,264 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/NewLayout.cshtml";
+}
+
+<nav class="navbar bg-body-tertiary" >
+    <div class="container-fluid" style="background-color:#3a3a3a">
+        <a class="navbar-brand" href="#" style="color: #ffc90d;  font-style: italic; font-weight: bold; ">
+            Alo Ziraat Çiftçi Kayıt Formu
+        </a>
+    </div>
+</nav>
+
+<br />
+
+<div class="form-row" style="margin:auto">
+    <div><span class="required">*</span>İşaretli Alanlar Zorunlu Alanlardır.</div>
+
+</div>
+<div class="container1">
+    
+    <form>
+       
+        <br />
+        <div class="form-row">
+            <div class="div-baslik">Danışanın Kişisel Bilgileri</div>
+            
+        </div>
+        <br />
+        <div class="form-row">
+            
+            <br />
+            <br />
+            <div class="col">
+                <label for="nameSurname">Adı-Soyadı<span class="required">*</span>:</label>
+                <input type="text" class="form-control" required>
+            </div>
+            <div class="col">
+                <label for="age">Yaşı:</label>
+                <input type="text" class="form-control" >
+            </div>
+        </div>
+        <div class="form-row">
+            <br />
+            <div class="col">
+                <label for="cinsiyet">Cinsiyeti:</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Seçiniz</option>
+                    <option>Kadın</option>
+                    <option>Erkek</option>
+                </select>
+                
+            </div>
+            <div class="col">
+                <label for="egitim">Eğitim Durumu:</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-row">
+            <br />
+            <div class="col">
+                <label for="faaliyetSure">Zirai Faaliyet Süresi:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+            </div>
+            
+        </div>
+
+
+        <br />
+
+        <div class="form-row">
+            <div class="div-baslik">Adres Bilgileri</div>
+
+        </div>
+        <br />
+        <div class="form-row">
+
+            <br />
+            <br />
+            <div class="col">
+                <label for="il">İl ve İlçe:<span class="required">*</span>:</label>
+                <input type="text" class="form-control" required>
+            </div>
+            <div class="col">
+                <label for="kasaba">Köy, Kasaba, Nahiye:</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col">
+                <label for="posta">Posta Bilgileri:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+            </div>
+        </div>
+
+
+        <br />
+
+        <div class="form-row">
+            <div class="div-baslik">İletişim Bilgileri</div>
+
+        </div>
+        <br />
+        <div class="form-row">
+
+            <br />
+            <br />
+            <div class="col">
+                <label for="tel">Telefon:</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col">
+                <label for="ceptel">Cep Telefonu<span class="required">*</span>:</label>
+                <input type="text" class="form-control" required>
+            </div>
+            <div class="col">
+                <label for="eposta">E-Posta<span class="required">*</span>:</label>
+                <input type="email" class="form-control" required>
+            </div>
+        </div>
+
+        <br />
+
+
+        <div class="form-row">
+            <div class="div-baslik">Danışanın Zirai Faaliyet Alanı<span class="required">*</span>:</div>
+
+        </div>
+        <br />
+        <div class="form-row">
+
+            <br />
+            <br />
+           
+            <select id="inputState" class="form-control" required>
+                <option selected>Seçiniz</option>
+                <option>Hayvancılık</option>
+                <option>Bahçe Ziraati</option>
+                <option>Tarla Ziraati</option>
+                <option>Sera Ziraati</option>
+                <option>Gıda Üretimi</option>
+                <option>Zirai Üretimle İlişkili Diğer Alanlar</option>
+            </select>
+        </div>
+
+        <br />
+
+        <div class="form-row">
+            <div class="div-baslik">Danışanın Üretim Faaliyetine ilişkin Bilgiler</div>
+
+        </div>
+        <br />
+        <div class="form-row">
+
+            <br />
+            <br />
+
+            <div class="col">
+                <label for="bilginot">Danışanın üretim faaliyetlerine ilişkin kısa bilgi notu:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+            </div>
+        </div>
+        
+        <br />
+
+        <div class="form-row">
+
+            <br />
+            <br />
+
+            <div class="col">
+                <label for="hayvanbilgi1">Hayvan Varlığı</label>
+                <br />
+                <label for="hayvanbilgi2">Hayvan Türü ve Sayısı:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+            </div>
+            <div class="col">
+                <label for="bahcebilgi1">Bahçe Varlığı</label>
+                <br />
+                <label for="bahcebilgi2">Ağaç Türleri ve Sayısı:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+            </div>
+            <div class="col">
+                <label for="tarlabilgi1">Tarla Varlığı</label>
+                <br />
+                <label for="tarlabilgi2">Ürün Türü ve Üretim Miktarı:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+            </div>
+        </div>
+
+        <br />
+
+        <div class="form-row">
+
+            <br />
+            <br />
+
+            <div class="col">
+                <label for="dosyayukle">Dosya Yükle:</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+
+            </div>
+        </div>
+
+        <br />
+
+        <div class="form-row">
+
+            <br />
+            <br />
+
+            <div class="col">
+                <label for="problem">Danışanın sorusu ve karşılaştığı problem:</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Seçiniz</option>
+                    <option>Genel</option>
+                    <option>Bölgesel</option>
+                    <option>Bireysel</option>
+                
+                </select>
+
+            </div>
+            <div class="col">
+                <label for="problem2">Problem ve soruna ilişkin açıklama:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+            </div>
+        </div>
+
+        <br />
+
+        <div class="form-row">
+
+            <br />
+            <br />
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    <a href="https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=6698&MevzuatTur=1&MevzuatTertip=5" style="text-decoration: underline;">KVKK kanunu</a>  kapsamında kişisel verilerimin işlenmesini ve üniversite bilgi sistemleri dışında paylaşılmamasını kabul ediyorum.
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="button1-container">
+                <button type="submit" class="custom-button1">Gönder</button>
+            </div>
+            </div>
+
+    </form>
+
+
+
+
+
+</div>
+
+
